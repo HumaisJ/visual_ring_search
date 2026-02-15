@@ -1,0 +1,10 @@
+streamlit
+tensorflow
+opencv-python-headless
+rembg
+scikit-learn
+matplotlib
+Pillow
+scipy
+# The following is needed for object detection later
+ultralytics

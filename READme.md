@@ -249,12 +249,3 @@ streamlit run app.py
 * Stone segmentation is heuristic-based (not learned)
 
 ---
-
-## 🚀 Future Improvements
-
-* Upgrade to YOLOv8m/l for higher accuracy
-* Train a custom gemstone segmentation model
-* Use FAISS for faster large-scale similarity search
-* Fine-tune EfficientNet on ring-specific dataset
-
----

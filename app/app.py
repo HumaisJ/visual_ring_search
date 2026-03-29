@@ -63,7 +63,7 @@ def main():
 
         col1, col2 = st.columns([1, 3])
         with col1:
-            st.image(query_image_pil, caption="Uploaded Query Image", use_column_width=True)
+            st.image(query_image_pil, caption="Uploaded Query Image",  width="stretch")
         with col2:
             # <<< Simplified Check: Just see if the index has items.
             if not engine.catalog_index or not engine.catalog_index.features:
@@ -82,13 +82,13 @@ def main():
                         
                         analysis_cols = st.columns(4)
                         with analysis_cols[0]:
-                            st.image(meta['original_image_rgb'], caption="1. Ring Cropped & BG Removed", use_column_width=True)
+                            st.image(meta['original_image_rgb'], caption="1. Ring Cropped & BG Removed",  width="stretch")
                         with analysis_cols[1]:
-                            st.image(meta['decomposed_masks']['stones'], caption="2. Stone Mask", use_column_width=True)
+                            st.image(meta['decomposed_masks']['stones'], caption="2. Stone Mask",  width="stretch")
                         with analysis_cols[2]:
-                            st.image(meta['decomposed_masks']['design_pattern'], caption="3. Design Mask", use_column_width=True)
+                            st.image(meta['decomposed_masks']['design_pattern'], caption="3. Design Mask",  width="stretch")
                         with analysis_cols[3]:
-                            st.image(search_results['processed_pattern_image'], caption="4. Normalized Design", use_column_width=True)
+                            st.image(search_results['processed_pattern_image'], caption="4. Normalized Design",  width="stretch")
 
                         st.divider()
                         st.header("✅ Search Results")
@@ -103,7 +103,7 @@ def main():
                                 for i, res in enumerate(matches):
                                     with cols[i % num_cols]:
                                         img_path = os.path.join(Config.CATALOG_FOLDER, res['metadata']['filename'])
-                                        st.image(Image.open(img_path), use_column_width=True)
+                                        st.image(Image.open(img_path),  width="stretch" )
                                         st.metric("Similarity", f"{res['similarity']*100:.1f}%")
                                         
                     except ValueError as e:

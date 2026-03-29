@@ -36,7 +36,7 @@ if model:
         image = Image.open(uploaded_file).convert("RGB")
         with col1:
             st.subheader("Original Image")
-            st.image(image, use_column_width=True)
+            st.image(image,  width="stretch")
 
         with col2:
             st.subheader("Detection Result")
@@ -56,7 +56,7 @@ if model:
                     # Convert color from BGR (OpenCV format) to RGB (PIL/Streamlit format)
                     result_image_rgb = Image.fromarray(result_image[:, :, ::-1])
                     
-                    st.image(result_image_rgb, caption="Image with bounding boxes", use_column_width=True)
+                    st.image(result_image_rgb, caption="Image with bounding boxes",  width="stretch")
 
                     # Print details for each detected box
                     for box in result.boxes:

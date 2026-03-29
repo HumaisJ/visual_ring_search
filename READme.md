@@ -1,8 +1,3 @@
-### 1. Project README File
-
-This is ready to be copied and pasted into a new file named `README.md` in the root of your `visual_ring_search` project folder.
-
-````markdown
 # Visual Ring Search Engine
 
 This project is a high-accuracy visual search engine designed to find jewelry rings from a catalog based on the similarity of their design, intelligently ignoring the gemstones. It uses a multi-stage AI pipeline, including a custom-trained object detector, to achieve robust and accurate results from any input image.

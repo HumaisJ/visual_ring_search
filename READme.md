@@ -179,6 +179,7 @@ visual_ring_search/
 │   ├── app.py                # Main Streamlit UI
 │   └── requirements.txt
 └── README.md
+└── runtime.txt
 ```
 
 ---

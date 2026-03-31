@@ -3,9 +3,10 @@ tensorflow==2.16.1
 numpy
 opencv-python-headless==4.10.0.84
 rembg
-onnxruntime==1.17.3
+onnxruntime
 scikit-learn
 matplotlib
 Pillow
 scipy
 ultralytics
+pi-heif

@@ -1,10 +1,12 @@
 streamlit
-tensorflow
-opencv-python-headless
+tensorflow==2.16.1
+numpy
+opencv-python-headless==4.10.0.84
 rembg
+onnxruntime
 scikit-learn
 matplotlib
 Pillow
 scipy
-# The following is needed for object detection later
 ultralytics
+pi-heif

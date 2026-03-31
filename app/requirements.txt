@@ -1,12 +1,10 @@
-streamlit
+streamlit==1.55.0
 tensorflow==2.16.1
 opencv-python-headless
 rembg
 scikit-learn
 matplotlib
 Pillow
-pillow
 numpy
 scipy
-# The following is needed for object detection later
 ultralytics

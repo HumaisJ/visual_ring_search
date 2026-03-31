@@ -21,7 +21,7 @@ from ultralytics import YOLO  # <<< NEW: Import the YOLO library
 class Config:
     # <<< NEW: Path to our trained Ring Detective model
     # This relative path works because app.py and engine.py are in the 'app' folder
-    DETECTOR_MODEL_PATH = "E:\\Punjab University\\MoblieAppDev\\visual_ring_search\\notebooks\\runs\\models\\ring_detector_run\\weights\\best.pt"
+    DETECTOR_MODEL_PATH = "../models/ring_detector_run/weights/best.pt"
     DETECTOR_CONFIDENCE_THRESHOLD = 0.5 # <<< NEW: Minimum confidence to accept a detection
 
     CATALOG_FOLDER = "../dataset/03_design_catalog/" # <<< UPDATED: Point to our new data structure

@@ -2,7 +2,7 @@ streamlit
 tensorflow==2.16.1
 opencv-python-headless
 rembg
-onnxruntime
+onnxruntime==1.17.3
 scikit-learn
 matplotlib
 Pillow
